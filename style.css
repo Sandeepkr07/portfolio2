@@ -1,0 +1,290 @@
+<style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            background-color: #f36cd8;
+            color: #0b0209;
+            content-visibility: rgb(28, 46, 159);
+        }
+
+        /* Header Styles */
+        .header {
+            background: #36a9c9;
+            color: rgb(241, 236, 236);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+            border: 3px solid rgb(14, 48, 116);
+        }
+
+        /* Social Media */
+        .social-links {
+            margin: 1rem 0;
+        }
+
+        .social-links a {
+            color: white;
+            font-size: 1.5rem;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: #0984e3;
+        }
+
+        /* Sections */
+        .section {
+            padding: 4rem 2rem;
+        }
+
+        .section h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2d3436;
+        }
+
+        /* Skills Grid */
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .skill-card {
+            background: #f5f6fa;
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        /* Projects */
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .project-info {
+            padding: 1.5rem;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #0984e3;
+            color: rgb(27, 3, 3);
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+
+        button:hover {
+            background: #0873c4;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .skills-grid, .projects-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+        line-height: 1.6;
+        background-color: #f36cd8;
+        color: #0b0209;
+        content-visibility: rgb(28, 46, 159);
+    }
+
+    /* Header Styles */
+    .header {
+        background: #36a9c9;
+        color: rgb(241, 236, 236);
+        padding: 2rem;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+        border: 3px solid rgb(14, 48, 116);
+    }
+
+    /* Social Media */
+    .social-links {
+        margin: 4rem 0;
+    }
+
+    .social-links a {
+        color: white;
+        font-size: 1.5rem;
+        margin: 0 10px;
+        transition: color 0.3s;
+    }
+
+    .social-links a:hover {
+        color: #e4ebf0;
+    }
+
+    /* Sections */
+    .section {
+        padding: 4rem 2rem;
+    }
+
+    .section h2 {
+        text-align: center;
+        margin-bottom: 2rem;
+        color: #2d3436;
+    }
+
+    /* Skills Grid */
+    .skills-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .skill-card {
+        background: #f5f6fa;
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+    }
+
+    /* Projects */
+    .projects-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .project-card {
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .project-info {
+        padding: 1.5rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .form-group {
+        margin-bottom: 1rem;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 0.8rem;
+        border: 1px solid #ddd;
+        border-radius: 4px;
+    }
+
+    button {
+        background: #0984e3;
+        color: white;
+        padding: 1rem 2rem;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.3s;
+    }
+
+    button:hover {
+        background: #0873c4;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+        .skills-grid, .projects-grid {
+            grid-template-columns: 1fr;
+        }
+    }
+</style>
+<head>
+    <style>
+        body {
+            background-color: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<style>
+  
